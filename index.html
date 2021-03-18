@@ -872,7 +872,7 @@
         </div>
       </section>
 
-      <section class="s1">
+      <section class="s1 footer">
         <div class="s1-title">
           <div class="s1-suptitle">Домашние фрукты</div>
           <h1>«Дивный Сад»</h1>
@@ -886,43 +886,43 @@
           </p>
         </div>
 
-        <div class="header__slider">
+        <div class="footer__slider">
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-1.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-2.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-3.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-4.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-5.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-6.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-7.png)"
           ></div>
           <div
-            class="header__slider_item"
+            class="footer__slider_item"
             style="background-image: url(img/s1-slide-8.png)"
           ></div>
         </div>
         <div class="container">
           <div class="slider-block">
-            <div class="slider-dots">
+            <div class="footer-slider-dots">
               <div class="slider-dots__item">
                 <div class="dots-box">Манго</div>
               </div>
@@ -1143,6 +1143,32 @@
             '<img class="slider-reviews_left" <img src="img/icon-arrow-left.png" alt="">',
           nextArrow:
             '<img class="slider-reviews_right" src="img/icon-arrow-right.png" alt="">',
+        });
+
+        $(".footer__slider").slick({
+          dots: false,
+          dotsClass: "slider_img-dots",
+          autoplay: true,
+          speed: 300,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+          asNavFor: ".footer-slider-dots",
+          arrows: true,
+          prevArrow:
+            '<img class="footer__slider-reviews_left" <img src="img/icon-arrow-left.png" alt="">',
+          nextArrow:
+            '<img class="footer__slider-reviews_right" src="img/icon-arrow-right.png" alt="">',
+        });
+
+        $(".footer-slider-dots").slick({
+          infinite: false,
+          vertical: false,
+          focusOnSelect: true,
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          asNavFor: ".footer__slider",
         });
       });
     </script>
